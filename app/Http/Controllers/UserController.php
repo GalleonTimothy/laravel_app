@@ -10,7 +10,12 @@ class UserController extends Controller
         return 'Hello from UserController';
     }
 
-    public function goto(){
-        return view('Users');
+    // public function goto(){
+    //     return view('Users');
+    // }
+
+    public function show($id){
+        return $id;
+
     }
 }
