@@ -14,12 +14,16 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 
-// Route::get('/users', [UserController::class,'index']);
+// // Route::get('/users', [UserController::class,'index']);
 
-Route::get('/kahitano', [UserController::class,'goto']);
+// Route::get('/kahitano', [UserController::class,'goto']);
+
+
+
+Route::get('users/{id}', [UserController::class, 'show']);

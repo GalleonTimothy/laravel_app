@@ -15,7 +15,13 @@ class UserController extends Controller
     // }
 
     public function show($id){
-        return $id;
+        $data = array(
+            "id" =>$id,
+            "name" =>"Timothy",
+            "age" =>22,
+            "email" =>"timthyguiang11142001@gmail.com"
+        );
+        return controllers('UserController', ['$data' => $data]);
 
     }
 }
